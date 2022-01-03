@@ -160,7 +160,7 @@ class MyHomePage extends StatelessWidget {
             ),
             MainCard(
                 'images/training.jpg',
-                "STAY HOME Urano",
+                "STAY HOME",
                 ["筋力トレーニングに\nチェンジ", "black"],
                 ["運動不足を解消しましょう。\n道具は必要ありません!", Colors.black]
             ),
@@ -168,11 +168,66 @@ class MyHomePage extends StatelessWidget {
         ),
       ),
       bottomNavigationBar: BottomNavigationBar (
-        backgroundColor: Colors.white,
+        backgroundColor: Colors.black12,
         items: <BottomNavigationBarItem>[
-          BottomNavigationBarItem(icon: Icon(Icons.home), title: Text('Home'),),
-          BottomNavigationBarItem(icon: Icon(Icons.home), title: Text('Home'),),
+          BottomNavigationBarItem(
+            icon: IconTheme(
+              data: IconThemeData(color: Colors.blue),
+              child: ImageIcon(AssetImage('images/Icon/Today.png')),
+            ),
+            title: Text('Today'),
+          ),
+          BottomNavigationBarItem(
+            icon: IconTheme(
+              data: IconThemeData(color: Colors.white),
+              child: ImageIcon(AssetImage('images/Icon/Games.png')),
+            ),
+            title: Text(
+                'Games',
+                style: TextStyle(
+                color: Colors.white,
+              ),
+            ),
+          ),
+          BottomNavigationBarItem(
+            icon: IconTheme(
+              data: IconThemeData(color: Colors.white),
+              child: ImageIcon(AssetImage('images/Icon/Arcade.png')),
+            ),
+            title: Text(
+                'Arcade',
+                style: TextStyle(
+                color: Colors.white,
+              ),
+            ),
+          ),
+          BottomNavigationBarItem(
+            icon: IconTheme(
+              data: IconThemeData(color: Colors.white),
+              child: ImageIcon(AssetImage('images/Icon/Apps.png')),
+            ),
+            title: Text(
+              'Apps',
+              style: TextStyle(
+                color: Colors.white,
+              ),
+            ),
+          ),
+          BottomNavigationBarItem(
+            icon: IconTheme(
+              data: IconThemeData(color: Colors.white),
+              child: ImageIcon(AssetImage('images/Icon/Search.png')),
+            ),
+            title: Text(
+                'Search',
+                style: TextStyle(
+                  color: Colors.white,
+                ),
+            ),
+          ),
         ],
+        // iconが4つ以上ある為、追加
+        type: BottomNavigationBarType.fixed,
       )
     );
   }

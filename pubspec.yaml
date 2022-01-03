@@ -90,3 +90,4 @@ flutter:
   assets: # ここは先頭に2文字あけないといけない
     - images/city.jpg
     - images/training.jpg
+    - images/Icon/
