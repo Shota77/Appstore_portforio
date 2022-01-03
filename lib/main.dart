@@ -160,7 +160,7 @@ class MyHomePage extends StatelessWidget {
             ),
             MainCard(
                 'images/training.jpg',
-                "STAY HOME",
+                "STAY HOME Urano",
                 ["筋力トレーニングに\nチェンジ", "black"],
                 ["運動不足を解消しましょう。\n道具は必要ありません!", Colors.black]
             ),
