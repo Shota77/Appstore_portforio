@@ -68,7 +68,7 @@ Widget MainCard (image, title, big_text, small_text) {
 
 class MyApp extends StatelessWidget {
   @override
-  Widget build(BuildContext context) {
+  Widget build(BuildContext context) { // build => UIを作成する
     return MaterialApp(
       title: 'Appstore Demo',
       theme: ThemeData(
@@ -82,7 +82,7 @@ class MyApp extends StatelessWidget {
 class MyHomePage extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
-    return Scaffold(
+    return Scaffold( // Scaffold => モバイルアプリのUI基盤
       //　全体のバックグランドカラー
       backgroundColor: Colors.black,
       body: SingleChildScrollView(
@@ -201,7 +201,6 @@ class MyHomePage extends StatelessWidget {
         ),
       ),
       bottomNavigationBar: BottomNavigationBar (
-        backgroundColor: Colors.black12,
         backgroundColor: HexColor('252525'),
         // backgroundColor: Color.fromRGBO(255, 255, 38, 1),
         items: <BottomNavigationBarItem>[
@@ -267,3 +266,4 @@ class MyHomePage extends StatelessWidget {
     );
   }
 }
+
