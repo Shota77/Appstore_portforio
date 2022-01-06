@@ -177,6 +177,26 @@ class MyHomePage extends StatelessWidget {
                 ["筋力トレーニングに\nチェンジ", "black"],
                 ["運動不足を解消しましょう。\n道具は必要ありません!", Colors.black]
             ),
+            ElevatedButton(
+                onPressed: () {
+                  showDialog(
+                      context: context,
+                      builder: (_) => AlertDialog(
+                        title: Text('Dialog'),
+                        content: Container(
+                          height: 300,
+                          child: Column(
+                            children: <Widget>[
+                              TextFormField()
+                            ],
+                          ),
+                        ),
+
+                      )
+                  );
+                },
+                child: Text("push"),
+            ),
           ],
         ),
       ),
