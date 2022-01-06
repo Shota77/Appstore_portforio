@@ -202,6 +202,8 @@ class MyHomePage extends StatelessWidget {
       ),
       bottomNavigationBar: BottomNavigationBar (
         backgroundColor: Colors.black12,
+        backgroundColor: HexColor('252525'),
+        // backgroundColor: Color.fromRGBO(255, 255, 38, 1),
         items: <BottomNavigationBarItem>[
           BottomNavigationBarItem(
             icon: IconTheme(
