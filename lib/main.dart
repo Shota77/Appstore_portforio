@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:test_version2/next_page.dart';
 
 // HEX colorの指定ができるクラス
 class HexColor extends Color {
@@ -197,11 +198,23 @@ class MyHomePage extends StatelessWidget {
                 },
                 child: Text("push"),
             ),
+            OutlinedButton(
+                onPressed: () {
+                  Navigator.push(
+                      context,
+                      MaterialPageRoute(builder: (context) => NextPage()));
+                },
+                child: Text('画面遷移'),
+                style: OutlinedButton.styleFrom(
+                  // widthはborderの幅
+                  side: BorderSide(color: Colors.white, width: 2.0)
+                ),
+            )
           ],
         ),
       ),
       bottomNavigationBar: BottomNavigationBar (
-        backgroundColor: HexColor('252525'),
+        backgroundColor: HexColor('C4C4C4'),
         // backgroundColor: Color.fromRGBO(255, 255, 38, 1),
         items: <BottomNavigationBarItem>[
           BottomNavigationBarItem(
