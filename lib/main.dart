@@ -209,7 +209,8 @@ class MyHomePage extends StatelessWidget {
                   // widthはborderの幅
                   side: BorderSide(color: Colors.white, width: 2.0)
                 ),
-            )
+            ),
+            Text('TEst'),
           ],
         ),
       ),
