@@ -214,7 +214,7 @@ class MyHomePage extends StatelessWidget {
             Text('New Branch修正'),
             Text('aaaaa'),
             Text('髪くらい'),
-            Text('先に修正'),
+            Text('勝手に修正しとけ'),
           ],
         ),
       ),
