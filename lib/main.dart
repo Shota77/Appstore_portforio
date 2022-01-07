@@ -210,7 +210,7 @@ class MyHomePage extends StatelessWidget {
                   side: BorderSide(color: Colors.white, width: 2.0)
                 ),
             ),
-            Text('TEst'),
+            Text('Tえst'),
             Text('New Branch修正'),
             Text('aaaaa'),
           ],
