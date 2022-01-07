@@ -213,6 +213,7 @@ class MyHomePage extends StatelessWidget {
             Text('TEst'),
             Text('New Branch修正'),
             Text('aaaaa'),
+            Text('髪くらい')
           ],
         ),
       ),
