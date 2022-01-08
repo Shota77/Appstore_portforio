@@ -1,7 +1,12 @@
 import 'package:flutter/material.dart';
 
 class NextPage extends StatelessWidget {
-  const NextPage({Key? key}) : super(key: key);
+  // 前のpageから送られてくる情報の受け皿としての変数を宣言
+  final String title;
+
+  // constructor
+  // 送られてきた情報を上の変数に格納する
+  NextPage(this.title);
 
   @override
   Widget build(BuildContext context) {
@@ -9,7 +14,7 @@ class NextPage extends StatelessWidget {
       appBar: AppBar(),
       body: Column(
         children: <Widget>[
-          Text('Next Page')
+          Text(title)
         ],
       ),
     );

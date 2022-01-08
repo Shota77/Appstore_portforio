@@ -202,7 +202,7 @@ class MyHomePage extends StatelessWidget {
                 onPressed: () {
                   Navigator.push(
                       context,
-                      MaterialPageRoute(builder: (context) => NextPage()));
+                      MaterialPageRoute(builder: (context) => NextPage('1031')));
                 },
                 child: Text('画面遷移'),
                 style: OutlinedButton.styleFrom(
@@ -210,11 +210,6 @@ class MyHomePage extends StatelessWidget {
                   side: BorderSide(color: Colors.white, width: 2.0)
                 ),
             ),
-            Text('Tえst'),
-            Text('New Branch修正'),
-            Text('aaaaa'),
-            Text('髪くらい'),
-            Text('勝手に修正しとけ'),
           ],
         ),
       ),
