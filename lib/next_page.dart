@@ -24,8 +24,16 @@ class NextPage extends StatelessWidget {
       ),
       appBar: AppBar(),
       body: Column(
+        mainAxisAlignment: MainAxisAlignment.center,
+          crossAxisAlignment: CrossAxisAlignment.start,
         children: <Widget>[
-          Text(title)
+          Text('1行目'),
+          Text('2行目aaaaaa'),
+          Text('3行目bbbbb'),
+          Text('4行目gggg'),
+          Text('5行目bbbbbbbbb'),
+          Text('6行目llll'),
+
         ],
       ),
     );

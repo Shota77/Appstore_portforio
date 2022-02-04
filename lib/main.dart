@@ -1,5 +1,9 @@
 import 'package:flutter/material.dart';
 import 'package:test_version2/next_page.dart';
+import 'package:test_version2/next_page.dart';
+import 'package:test_version2/test.dart';
+
+TestWidget testWidget = TestWidget();
 
 // HEX colorの指定ができるクラス
 class HexColor extends Color {
@@ -16,6 +20,7 @@ class HexColor extends Color {
 
 void main() {
   runApp(MyApp());
+  print(testWidget.name);
 }
 
 Widget MainCard (image, title, big_text, small_text) {
